@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "styled-components.vscode-styled-components",
+    "codewithshashank.svg-to-jsx",
+    "esbenp.prettier-vscode",
+    "pkief.material-icon-theme",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets"
+  ]
+}
