@@ -51,6 +51,11 @@ const menuList: MenuList[] = [
     label: "Doctors And Hospitals",
     path: "/manage-doctors",
   },
+  {
+    id: "app_settings",
+    label: "Settings",
+    path: "/manage-doctors",
+  },
 ];
 
 const Sidebar = () => {
