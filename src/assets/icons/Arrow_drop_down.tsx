@@ -7,6 +7,7 @@ interface Props {
 const Arrow_drop_down = (props: Props) => {
   return (
     <svg
+      {...props}
       height="24"
       width="24"
       fill="none"

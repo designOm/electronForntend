@@ -1,7 +1,9 @@
 import React from 'react';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import { PrimaryLayout } from './layout';
-import { Landing, Authentication } from './screens';
+import { Authentication, Landing } from './screens';
+
+const PageNotFound = () => <p>Back to <Link to={'/'}>Home</Link></p>
 
 
 const AppRoutes = () => {
@@ -10,7 +12,10 @@ const AppRoutes = () => {
             <Route path="/" element={<PrimaryLayout />}>
                 <Route index element={<Landing />} />
                 <Route path="authentication" element={<Authentication />} />
+
+                <Route path='*' element={<PageNotFound />} />
             </Route>
+
         </Routes>
     </HashRouter>
 }
